@@ -223,7 +223,7 @@ plt.title(f'Predicted vs Actual Travel Time\n(R² = {r2:.3f} | RMSE = {rmse:.2f}
           fontsize=14, pad=20)
 
 # Legend (Seaborn places it automatically, but we can tweak if needed)
-plt.legend(fontsize=11)
+plt.legend(fontsize=10)
 
 # Final adjustments
 plt.tight_layout()
