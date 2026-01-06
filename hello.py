@@ -20,9 +20,9 @@ params = {
     'max_depth': 0,                    # 0 = no limit → grow extremely deep trees (key for overfitting!)
     'min_child_weight': 1,             # Minimum = 1 → almost no restriction on leaf nodes
     'gamma': 0.0,                      # No minimum loss reduction → allow all splits
-    'subsample': 1.00,                  # Use 100% of rows → no row bagging
+    'subsample': 1.0,                  # Use 100% of rows → no row bagging
     'colsample_bytree': 1.0,           # Use 100% of features per tree → no column bagging
-    'colsample_bylevel': 1.00,          # Use all features at each level
+    'colsample_bylevel': 1.0,          # Use all features at each level
     'colsample_bynode': 1.0,           # Use all features at each node
     'reg_lambda': 0.0,                 # No L2 regularization
     'reg_alpha': 0.0,                  # No L1 regularization
@@ -223,7 +223,7 @@ plt.title(f'Predicted vs Actual Travel Time\n(R² = {r2:.3f} | RMSE = {rmse:.2f}
           fontsize=14, pad=20)
 
 # Legend (Seaborn places it automatically, but we can tweak if needed)
-plt.legend(fontsize=10)
+plt.legend(fontsize=11)
 
 # Final adjustments
 plt.tight_layout()
