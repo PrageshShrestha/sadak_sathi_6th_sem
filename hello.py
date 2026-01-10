@@ -5,7 +5,7 @@ df.columns = ["from","to","dist" , "time" , "dir_ref" , "rush"]
 # Separate features (X) and target variable (y)
 X = df[['from', 'to' ,"dist",  "dir_ref" , "rush"]]
 y = df['time']
-df.head(20)
+df.head(20)dsfdsf
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
